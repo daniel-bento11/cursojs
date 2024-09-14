@@ -1,6 +1,6 @@
 # Curso - Programação em JavaScript
-##✨ Descrição
-##🟡 Status
-##📋 Instruções
-##🧑 Autores
-##📚 Referências
+## ✨ Descrição
+## 🟡 Status
+## 📋 Instruções
+## 🧑 Autores
+## 📚 Referências
