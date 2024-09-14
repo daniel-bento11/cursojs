@@ -1,2 +1,6 @@
-# cursojs
-Meu repositório para o Curso de JavaScript - SENAI
+# Curso - Programação em JavaScript
+##✨ Descrição
+##🟡 Status
+##📋 Instruções
+##🧑 Autores
+##📚 Referências
