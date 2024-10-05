@@ -1,0 +1,147 @@
+table{
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+    text-align: right;
+}
+
+thead, tfoot {
+    background-color: #964B00;
+    color: rgb(218, 217, 217);
+}
+
+thead > tr> th, tfoot > tr > th, tfoot > tr > td {
+    border-color: white;
+}
+
+
+
+th, td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+}
+
+td{
+    text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+    background-color: rgb(245, 217, 180);
+}
+
+tfoot th {
+    text-align: right;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+table > tbody > tr:nth-of-type(even):hover{
+    background-color: rgb(51, 188, 238);
+    color: white;
+}
+
+table > tbody > tr:nth-of-type(odd):hover{
+    background-color: rgb(197, 231, 243);
+}
+
+table > tbody > tr > td:hover{
+    font-weight: bold;
+}
+
+.botao {
+    padding: 5px 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: transparent;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+.botao-sucess {
+    border-color: #64ff64;
+    color: #64ff64;
+    
+}
+
+.botao-danger {
+    border-color: #ff6464;
+    color: #ff6464;
+    
+}
+
+.botao-sucess:hover{
+    background-color: #aaffaa;
+    color:black;
+}
+
+.botao-danger:hover{
+    background-color: #ffaaaa;
+    color:black
+}
+
+ul.menu{
+    width: 200px;
+    background-color: rgb(245, 217, 180);
+    padding: 0;
+}
+
+ul.menu > li{
+    list-style-type: none;
+    padding: 5px 10px;
+    font-family: Impact;
+    letter-spacing: 4px;
+    box-sizing: border-box;
+}
+
+ul.menu li:hover{
+    background-color: #964B00;
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+ul.lateral > li{
+    width: 100%;
+}
+
+ul.lateral li:hover{
+    padding-left: 20px;
+}
+
+ul.superior{
+    background-color:#964B00 ;
+    color: white;
+    width: 100%;
+    padding: 0;
+    text-align: right;
+}
+
+ul.superior > li {
+    display: inline-block;
+    border: 2px solid #964B00;
+}
+
+ul.superior li:hover{
+    background-color: rgb(245, 217, 180);
+    color:black;
+    border-color: rgb(245, 217, 180);
+    border-bottom-color: #964B00;
+    text-decoration-color: #964B00;
+}

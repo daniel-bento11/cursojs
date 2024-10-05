@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/jpg" href="../assets/coffee&book.jpg" />
+</head>
+    <title>Biblioteca</title>
+</head>
+<body>
+
+    <!-- estilização de tabelas -->
+
+    <table>
+        <caption>
+            Usuários da Biblioteca
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col"> Nome </th>
+                <th scope="col"> Sobrenome </th>
+                <th scope="col"> Data de Nascimento </th>
+                <th scope="col"> E-mail </th>
+                <th scope="col"> Ações </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row"> Daniel </th>
+                <td> Bento </td>
+                <td>25/11/2002</td>
+                <td>danielbento@gmail.com</td>
+                <td>
+                    <button onclick="alert('Salvo com Sucesso!')" class="botao botao-sucess">OK</button>
+                    <button onclick="confirm('Tem certeza que deseja deletar?')" class="botao botao-danger">Deletar</button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"> Pedro </th>
+                <td> Otrente </td>
+                <td>05/12/2002</td>
+                <td>pedrootrente@gmail.com</td>
+                <td>
+                    <button onclick="alert('Salvo com Sucesso!')" class="botao botao-sucess">OK</button>
+                    <button onclick="confirm('Tem certeza que deseja deletar?')" class="botao botao-danger">Deletar</button>
+                    
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"> Larissa </th>
+                <td> Benedicto </td>
+                <td>15/06/2001</td>
+                <td>larissabenedicto@gmail.com</td>
+                <td>
+                    <button onclick="alert('Salvo com Sucesso!')" class="botao botao-sucess">OK</button>
+                    <button onclick="confirm('Tem certeza que deseja deletar?')" class="botao botao-danger">Deletar</button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"> Jeryhane </th>
+                <td> Valente </td>
+                <td>15/07/2002</td>
+                <td>jeryhanevalente@gmail.com</td>
+                <td>
+                    <button onclick="alert('Salvo com Sucesso!')" class="botao botao-sucess">OK</button>
+                    <button onclick="confirm('Tem certeza que deseja deletar?')" class="botao botao-danger">Deletar</button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"> Suelen </th>
+                <td> Bento </td>
+                <td>14/01/2007</td>
+                <td>suelenbento@gmail.com</td>
+                <td>
+                    <button onclick="alert('Salvo com Sucesso!')" class="botao botao-sucess">OK</button>
+                    <button onclick="confirm('Tem certeza que deseja deletar?')" class="botao botao-danger">Deletar</button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"> Sabrina </th>
+                <td> Caixão </td>
+                <td>25/02/2002</td>
+                <td>sabrinacaixao@gmail.com</td>
+                <td>
+                    <button onclick="alert('Salvo com Sucesso!')" class="botao botao-sucess">OK</button>
+                    <button onclick="confirm('Tem certeza que deseja deletar?')" class="botao botao-danger">Deletar</button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"> Carol </th>
+                <td> Nascimento </td>
+                <td>07/03/2002</td>
+                <td>carolnascimento@gmail.com</td>
+                <td>
+                    <button onclick="alert('Salvo com Sucesso!')" class="botao botao-sucess">OK</button>
+                    <button onclick="confirm('Tem certeza que deseja deletar?')" class="botao botao-danger">Deletar</button>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="4">Total de Usuários</th>
+                <td>7</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- estilização de lista não ordenada -->
+    <br>
+    <h2>Lista de Livros</h2>
+    <hr width="10%" align="left">
+    <ul> <!-- unordered list type= circle, disc e square-->
+        <li>Alice no País das Maravilhas</li>
+        <li>Game of Thrones</li>
+        <li>Os Sete Maridos de Evelyn Hugo</li>
+        <li>Iverno da Alma</li>
+        <li>A Culpa é das Estrelas</li>
+        <li>Harry Potter
+            <ol>
+                <li>A pedra Filosofal</li>
+                <li>A Camâra Secreta</li>
+                <li>O Prisioneiro de Askaban</li>
+                <li>O Cálice de Fogo</li>
+                <li>A Ordem da Fenix</li>
+                <li>O Enigma do Princípe</li>
+                <li>As Relíquias da Morte</li>
+            </ol>
+        </li>
+    </ul>
+
+    <!-- <ol>  ordered list 
+        <li>Alice no País das Maravilhas</li>
+        <li>Game of Thrones</li>
+        <li>Os Sete Maridos de Evelyn Hugo</li>
+        <li>Iverno da Alma</li>
+        <li>A Culpa é das Estrelas</li>
+    </ol> -->
+
+    <ul class="menu lateral">
+        <li>Home</li>
+        <li>Quem somos</li>
+        <li>Contatos</li>
+    </ul>
+    
+    <ul class="menu superior">
+        <li>Home</li>
+        <li>Quem somos</li>
+        <li>Contatos</li>
+    </ul>
+
+</body>
+</html>
