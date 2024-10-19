@@ -37,7 +37,6 @@ console.log("Olá meu nome é %s e tenho %d anos.", nome, idade);
  * %s - String
  * %d - Digito
  * %o - Objetct
-
  */
 
 console.log(mensagem_interpolada);
@@ -68,25 +67,16 @@ else{
 let numero = 8;
 let multiplicador = 1;
 
-console.log(`${numero} X ${multiplicador} = ${numero * multiplicador }`);
-multiplicador++;
-console.log(`${numero} X ${multiplicador} = ${numero * multiplicador }`);
-multiplicador++;
-console.log(`${numero} X ${multiplicador} = ${numero * multiplicador }`);
-multiplicador++;
-console.log(`${numero} X ${multiplicador} = ${numero * multiplicador }`);
-multiplicador++;
-console.log(`${numero} X ${multiplicador} = ${numero * multiplicador }`);
-multiplicador++;
-console.log(`${numero} X ${multiplicador} = ${numero * multiplicador }`);
-multiplicador++;
-console.log(`${numero} X ${multiplicador} = ${numero * multiplicador }`);
-multiplicador++;
-console.log(`${numero} X ${multiplicador} = ${numero * multiplicador }`);
-multiplicador++;
-console.log(`${numero} X ${multiplicador} = ${numero * multiplicador }`);
-multiplicador++;
-console.log(`${numero} X ${multiplicador} = ${numero * multiplicador }`);
+console.log(`${numero} X ${multiplicador} = ${numero * multiplicador++ }`);
+console.log(`${numero} X ${multiplicador} = ${numero * multiplicador++ }`);
+console.log(`${numero} X ${multiplicador} = ${numero * multiplicador++ }`);
+console.log(`${numero} X ${multiplicador} = ${numero * multiplicador++ }`);
+console.log(`${numero} X ${multiplicador} = ${numero * multiplicador++ }`);
+console.log(`${numero} X ${multiplicador} = ${numero * multiplicador++ }`);
+console.log(`${numero} X ${multiplicador} = ${numero * multiplicador++ }`);
+console.log(`${numero} X ${multiplicador} = ${numero * multiplicador++ }`);
+console.log(`${numero} X ${multiplicador} = ${numero * multiplicador++ }`);
+console.log(`${numero} X ${multiplicador} = ${numero * multiplicador++ }`);
 
 console.log(" ")
 
