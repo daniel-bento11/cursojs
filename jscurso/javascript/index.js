@@ -32,6 +32,14 @@ const mensagem = "Olá, meu nome é " + nomeCompleto + "\ne tenho " + idade + " 
 const mensagem_interpolada = `Olá, meu nome é ${nomeCompleto}
 e tenho ${idade} anos.`;
 
+console.log("Olá meu nome é %s e tenho %d anos.", nome, idade);
+/**
+ * %s - String
+ * %d - Digito
+ * %o - Objetct
+
+ */
+
 console.log(mensagem_interpolada);
 console.log("");
 console.log(mensagem);
