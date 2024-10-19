@@ -7,7 +7,7 @@ n4 = rl.questionFloat('Informe a quarta nota: ');
 
 let media = (n1+n2+n3+n4)/4;
 
-console.log(`A média do aluno é: ${media}`)
+console.log(`A média do aluno é: ${media.toFixed(2)}`)
 if (media >=6){
     console.log("Aprovado!")
 }
