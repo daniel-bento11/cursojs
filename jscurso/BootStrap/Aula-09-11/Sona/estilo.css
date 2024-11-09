@@ -1,0 +1,35 @@
+body{
+    background: linear-gradient(to bottom, #091428, #0A1428) fixed;
+}
+h1{
+    color:#C89B3C;
+}
+.nav-cor{
+    background: linear-gradient(to right, #005A82, #0AC8B9);
+}
+
+.mostrar-colum{
+    border: 1px solid white;
+    background-color: grey;
+}
+
+.text-white{
+    color: white;
+}
+
+.sona-color{
+    background: #0AC8B9;
+}
+
+/* @media (max-width:900px) {
+    .nav-cor{
+        background: #dadada;
+    }
+}
+
+@media (max-width:650px) {
+    .nav-cor{
+        background: #d3ef4e;
+    }
+} */
+
