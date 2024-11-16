@@ -1,0 +1,29 @@
+h1 {
+    color: #f00;
+}
+
+.navbar-cor-propria {
+    background-color: #4ab;
+}
+
+.mostrar-coluna {
+    border: 1px solid #430;
+    background-color: #dedede;
+}
+
+@media (max-width: 900px) {
+    .navbar-cor-propria {
+        background-color: #dadada;
+    }
+}
+
+@media (max-width: 650px) {
+    .navbar-cor-propria {
+        background-color: #d3ef4e;
+    }
+}
+
+.carousel-inner img{
+    height:400px;
+    object-fit: cover;
+}

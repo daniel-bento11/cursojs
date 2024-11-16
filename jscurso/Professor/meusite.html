@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        section {
+            height: 100vh; /* view height */
+            /* width:  100vw; */ /* view width */
+        }
+
+        #inicio {
+            display: block;
+            background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2) ), url('https://dutralevi.com.br/blog/wp-content/uploads/2019/08/image1-1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 50px;
+            color: #fff;
+        }
+
+        .padding20 {
+            padding-top: 20px;
+        }
+
+        .carrossel-mascara {
+            background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2) );
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Meu Site</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#inicio" class="nav-link active" aria-current="page">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#fotos" class="nav-link">Fotos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <section id="inicio" class="padding20">
+            <h1 class="text-center align-middle">Seja bem-vindo ao meu site</h1>
+        </section>
+        <section id="fotos" class="padding20">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/08/image-1-e1693402099319.jpg?w=1000" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block carrossel-mascara">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i0.wp.com/prdnetshoes.wpcomstaging.com/wp-content/uploads/2020/12/basquete_netshoes_20201207.jpeg?fit=1256%2C500&ssl=1" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/11/27/585990830-whatsapp-image-2023-11-27-at-194649.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section id="contato" class="padding20 pt-5">
+            <h1>Meu formulário</h1>
+            <form class="container-fluid justify-content-start needs-validation" novalidate>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="nome" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Informe o seu nome" required>
+                        <div class="valid-feedback">
+                            Perfeito
+                        </div>
+                        <div class="invalid-feedback">
+                            Por favor informe o nome
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label for="sobrenome" class="form-label">Sobrenome:</label>
+                        <input type="text" class="form-control" id="sobrenome" name="sobrenome" placeholder="Informe o seu sobrenome" required>
+                        <div class="valid-feedback">
+                            Perfeito
+                        </div>
+                        <div class="invalid-feedback">
+                            Por favor informe o sobrenome
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="email" class="form-label">
+                            E-mail
+                        </label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="seuemail@email.com" required>
+                        <div class="valid-feedback">
+                            Perfeito
+                        </div>
+                        <div class="invalid-feedback">
+                            Por favor informe o e-mail
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="mensagem" class="form-label">Mensagem</label>
+                        <textarea class="form-control" placeholder="Deixe sua mensagem aqui" id="mensagem" name="mensagem" required></textarea>
+                        <div class="valid-feedback">
+                            Perfeito
+                        </div>
+                        <div class="invalid-feedback">
+                            Por favor informe a mensagem que deseja enviar
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <button class="btn btn-outline-success" type="submit">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        (() => {
+            'use strict'
+          
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+          
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+              form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                  event.preventDefault()
+                  event.stopPropagation()
+                }
+          
+                form.classList.add('was-validated')
+              }, false)
+            })
+        })()
+    </script>
+</body>
+</html>

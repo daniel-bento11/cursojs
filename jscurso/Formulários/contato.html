@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        input:invalid {
+            border: 2px dashed red;
+        }
+
+        input:valid {
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-cor-propria">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-default" onclick="toggleTema()">Trocar Tema</button>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <form method="get" action="index.html" enctype="application/x-www-form-urlencoded">
+        <div class="row">
+            <div class="col">
+                <label class="form-label" for="nomePessoa">Nome da Pessoa</label>
+                <input class="form-control" type="text" id="nomePessoa" name="nomePessoa" />
+            </div>
+            <div class="col">
+                <label class="form-label" for="dataNascimento">Data de Nascimento</label>
+                <!-- <input class="form-control" type="text" id="dataNascimento" placeholder="dd/mm/aaaa" pattern="\d{1,2}\/\d{1,2}\/\d{4}" /> -->
+                <input class="form-control" type="date" id="dataNascimento" name="dataNascimento" max="2024-11-09" />
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" id="email" name="email" class="form-control">
+            </div>
+            <div class="col">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="password" id="senha" name="senha" class="form-control">
+            </div>
+            <div class="col">
+                <button id="btnToggleSenha" type="button" class="btn btn-secondary" onclick="toggleExibirSenha()">Exibir Senha</button>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col">
+                <button type="submit" class="btn btn-success">Enviar Formulário</button>
+            </div>
+        </div>
+    </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <script>
+
+        function pegarTemaDosCookies() {
+            const cookies = document.cookie.split(";");
+            for (let i = 0; i< cookies.length; i++){
+                const cookie = cookies[i].trim();
+                if (cookie.startsWith("tema=")){
+                    return cookie.substring(5);
+                }
+            }
+            return 'light';
+        }
+
+        function toggleExibirSenha() {
+            const campoSenha = document.getElementById("senha");
+            const botaoToggle = document.getElementById("btnToggleSenha");
+
+            if (campoSenha.type === "password") {
+                campoSenha.type = "text";
+                botaoToggle.innerText = "Esconder Senha";
+            } else {
+                campoSenha.type = "password";
+                botaoToggle.innerText = "Exibir Senha";
+            }
+        }
+
+        function toggleTema(){
+            const thema = document.documentElement.getAttribute('data-bs-theme');
+            if (thema == 'dark'){
+                cor = 'light';
+            }else{
+                cor = 'dark';
+            }
+            definirTema(cor)
+        }
+
+        function definirTema(tema) {
+            document.documentElement.setAttribute('data-bs-theme', tema);
+            document.cookie = `tema=${tema};expires=Sun,17 Nov 2024 23:59:59 UTC; path=/`;
+        }
+
+
+        const temaSalvo = pegarTemaDosCookies();
+        definirTema(temaSalvo);
+    </script>
+</body>
+</html>

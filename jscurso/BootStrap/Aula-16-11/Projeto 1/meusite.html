@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="assets/flor.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+         section {
+            height: 100vh;
+        }
+
+        #inicio {
+            display: block;
+            background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2) ), url('assets/dandelions.avif');
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 50px;
+            color: #fff;
+        }
+
+        .carousel-inner img {
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        .padding20 {
+            padding-top: 20px;
+        }
+
+    </style>
+
+</head>
+<body style="background-image: linear-gradient(to right, rgba(236, 183, 84, 0.678) , rgba(233, 175, 207, 0.733));">
+    <nav class="navbar sticky-top navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/flor.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Meu Site
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#inicio">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#fotos">Fotos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contato">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <section name="inicio" id="inicio" class="padding20">
+            <div class="container-fluid">
+                <h1 class="text-center align-middle">Meu Site</h1>
+            </div>
+        </section>
+        <section name="fotos" id="fotos" class="padding20">
+            <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade mt-5" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/flor1.jpg" class="d-block w-100" alt="flor1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/flor2.jpg" class="d-block w-100" alt="flor2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/flor3.jpg" class="d-block w-100" alt="flor3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/flor4.jpg" class="d-block w-100" alt="flor4">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/flor5.jpg" class="d-block w-100" alt="flor5">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Próximo</span>
+                </button>
+              </div>
+        </section>
+        <section name="contato" id="contato" class="padding20 mt-5">
+            <div class="container mt-5">
+                <form method="get" action="meusite.html" enctype="application/x-www-form-urlencoded">
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="nome" name="nome" placeholder="nome">
+                                <label for="nome">Nome</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="sobrenome" name="sobrenome" placeholder="sobrenome">
+                                <label for="sobrenome">Sobrenome</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="nome@email.com">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-floating">
+                                <textarea class="form-control" id="mensagem" nome="mensagem" rows="3" style="height: 100px" placeholder="Deixe seu comentário aqui!"></textarea>
+                                <label for="mensagem">Mensagem</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col">
+                            <button type="submit" class="btn btn-outline-success">Enviar Formulário</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script>
+            (() => {
+                'use strict'
+              
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                const forms = document.querySelectorAll('.needs-validation')
+              
+                // Loop over them and prevent submission
+                Array.from(forms).forEach(form => {
+                  form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                      event.preventDefault()
+                      event.stopPropagation()
+                    }
+              
+                    form.classList.add('was-validated')
+                  }, false)
+                })
+            })()
+        </script>
+    </body>
+</html>
