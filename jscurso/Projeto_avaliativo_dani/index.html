@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFT Fotografias</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/estilo.css">
+    <script src="./assets/js/script.js"></script>
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary bg-dark border-bottom border-body fixed-top navbar-expand-lg" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/imgs/T_F_T.svg" alt="TFT Fotografias" width="60" height="48">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarNav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active" title="Ir para Home">Home</a>    
+                    </li>
+                    <li class="nav-item">
+                        <a href="#trabalhos" class="nav-link" title="Ir para Trabalhos">Trabalhos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#depoimentos" class="nav-link" title="Ir para Depoimentos">Depoimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contatos" class="nav-link" title="Ir para Contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="home" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#home" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#home" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#home" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="./assets/imgs/party.jpg" class="d-block w-100 vh-100 object-fit-cover" alt="Festa de Casamento">
+            <div class="carousel-caption rounded d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="./assets/imgs/rings.jpg" class="d-block w-100 vh-100 object-fit-cover" alt="Aliança dos Noivos">
+            <div class="carousel-caption rounded d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="./assets/imgs/photoshoot.jpg" class="d-block w-100 vh-100 object-fit-cover" alt="Sessão de Fotos na Praia">
+            <div class="carousel-caption rounded d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#home" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#home" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div id="trabalhos" class="vh-100 w-100 diferenca-navbar">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col">
+                    <h1>Trabalhos</h1>
+                </div>
+                <div class="col text-end">
+                    <a href="#carousel-trabalhos" role="button" data-bs-slide="prev" class="btn btn-primary">
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+                    <a href="#carousel-trabalhos" role="button" data-bs-slide="next" class="btn btn-primary">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div id="carousel-trabalhos" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col mb-3">
+                                    <div class="card">
+                                        <img src="https://picsum.photos/300/200" alt="Imagem aleatória" class="card-img-top">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Primeiro elemento</h4>
+                                            <div class="card-text">Descrição do primeiro elemento</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-3">
+                                    <div class="card">
+                                        <img src="https://picsum.photos/300/200" alt="Imagem aleatória" class="card-img-top">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Primeiro elemento</h4>
+                                            <div class="card-text">Descrição do primeiro elemento</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-3">
+                                    <div class="card">
+                                        <img src="https://picsum.photos/300/200" alt="Imagem aleatória" class="card-img-top">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Primeiro elemento</h4>
+                                            <div class="card-text">Descrição do primeiro elemento</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col mb-3">
+                                    <div class="card">
+                                        <img src="https://picsum.photos/300/200" alt="Imagem aleatória" class="card-img-top">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Primeiro elemento</h4>
+                                            <div class="card-text">Descrição do primeiro elemento</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-3">
+                                    <div class="card">
+                                        <img src="https://picsum.photos/300/200" alt="Imagem aleatória" class="card-img-top">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Primeiro elemento</h4>
+                                            <div class="card-text">Descrição do primeiro elemento</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-3">
+                                    <div class="card">
+                                        <img src="https://picsum.photos/300/200" alt="Imagem aleatória" class="card-img-top">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Primeiro elemento</h4>
+                                            <div class="card-text">Descrição do primeiro elemento</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="depoimentos" class="vh-100 w-100 diferenca-navbar">
+        <div class="container">
+            <h1>Depoimentos</h1>
+
+            <div class="row mt-5">
+                <div class="col mb-3">
+                    <div class="card">
+                        <img src="./assets/imgs/f1.jpeg" class="card-img-top" alt="Foto da primeira pessoa">
+                        <div class="card-body">
+                          <h5 class="card-title">Fiquei satisfeita</h5>
+                          <p class="card-text">É, o resultado foi okay.</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-body-secondary">Joana</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card">
+                        <img src="./assets/imgs/f2.jpeg" class="card-img-top" alt="Foto da primeira pessoa">
+                        <div class="card-body">
+                          <h5 class="card-title">Mediano</h5>
+                          <p class="card-text">Pelo preço que paguei esperei um pouco mais.</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-body-secondary">Antonieta</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card">
+                        <img src="./assets/imgs/f3.jpeg" class="card-img-top" alt="Foto da primeira pessoa">
+                        <div class="card-body">
+                          <h5 class="card-title">É o que tem</h5>
+                          <p class="card-text">Não encontrei no mercado coisa muito melhor.</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-body-secondary">Mauricio</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contatos" class="vh-100 w-100 diferenca-navbar">
+        <div class="container mt-5">
+            <h1>Contatos</h1>
+            <form method="get" action="index.html" enctype="application/x-www-form-urlencoded" class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4 position-relative">
+                  <label for="validationTooltip01" class="form-label">Nome Completo</label>
+                  <input type="text" class="form-control" id="validationTooltip01" value="" name="nome" required>
+                  <div class="invalid-feedback">
+                    Nome Obrigatório!
+                  </div>
+                </div>
+                <div class="col-md-4 position-relative">
+                  <label for="validationTooltip02" class="form-label">E-mail</label>
+                  <input type="email" class="form-control" id="validationTooltip02" name="email" value="" required>
+                  <div class="invalid-feedback">
+                    Insira um E-mail válido!
+                  </div>
+                </div>
+                <div class="col-md-8 position-relative">
+                    <label for="validationTextarea" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="validationTextarea" placeholder="Sua mensagem aqui..." name="mensagem" required></textarea>
+                    <div class="invalid-feedback">
+                      Mensagem Obrigatória!
+                    </div>
+                  </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Enviar Mensagem</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <script>
+        (() => {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation')
+
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+</html>

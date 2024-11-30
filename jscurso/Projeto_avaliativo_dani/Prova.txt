@@ -1,0 +1,4 @@
+A avaliação do projeto se baseará na construção do formulário
+do site que criamos hoje (23/11)
+
+Precisa terminar a parte do "Contatos"
